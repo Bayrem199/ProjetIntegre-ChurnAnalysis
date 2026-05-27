@@ -13,7 +13,7 @@ def convert_dates(df):
 
 def clean_date_of_birth(df):
     df['DATE_OF_BIRTH'] = pd.to_numeric(df['DATE_OF_BIRTH'], errors='coerce')
-    df.loc[(df['DATE_OF_BIRTH'] < 1930) | (df['DATE_OF_BIRTH'] > 2005), 'DATE_OF_BIRTH'] = np.nan
+    df.loc[(df['DATE_OF_BIRTH'] < 1930) | (df['DATE_OF_BIRTH'] > 2007), 'DATE_OF_BIRTH'] = np.nan
     df['AGE'] = 2025 - df['DATE_OF_BIRTH']
     return df
 
