@@ -220,3 +220,4 @@ data/
 03_power_bi/rapport.pbix 
 03_power_bi/data/ 
 03_power_bi/fact_churn_clean.csv 
+04_machine_learning/models/*.pkl 
